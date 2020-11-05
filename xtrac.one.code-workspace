@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"workbench.view.alwaysShowHeaderActions": true,
+		"zenMode.centerLayout": false,
+		"zenMode.fullScreen": false
+	}
+}
