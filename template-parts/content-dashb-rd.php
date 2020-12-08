@@ -17,6 +17,7 @@
 			<div class="dashb-highlights-item"><span class="dashb-data-item"><?php $builds_last_week = get_field( "builds_last_week" ); if ( $builds_last_week ) { echo $builds_last_week; } else { echo "0"; } ?></span><span class="dashb-text-item">BUILDS LAST WEEK</span></div>
 			<div class="dashb-highlights-item"><span class="dashb-data-item"><?php $builds_this_month = get_field( "builds_this_month" ); if ( $builds_this_month ) { echo $builds_this_month; } else { echo "0"; } ?></span><span class="dashb-text-item">BUILDS THIS MONTH</span></div>
 			<div class="dashb-highlights-item"><span class="dashb-data-item"><?php $builds_this_year = get_field( "builds_this_year" ); if ( $builds_this_year ) { echo $builds_this_year; } else { echo "0"; } ?></span><span class="dashb-text-item">BUILDS THIS CALENDAR YEAR</span></div>
+			<div class="dashb-highlights-item"><span class="dashb-text-item">LAST UPDATED ON <?php $last_updated = get_field( "last_updated_on" ); if ( $last_updated ) { echo $last_updated; } else { echo "0"; } ?></span></div>
 		</div>
 		<!-- EDIT BUTTON -->
 		<div class="dashb-edit">
@@ -42,6 +43,7 @@
 		$data_2017_2018 = get_field( "data_2017_2018" ); 
 		$data_2018_2019 = get_field( "data_2018_2019" ); 
 		$data_2019_2020 = get_field( "data_2019_2020" );
+		$data_2020_2021 = get_field( "data_2020_2021" );
 				
 		// Graph 2: Ship schedule
 		$data_planned_qty = get_field( "data_planned_qty" );
@@ -59,6 +61,7 @@
 		var data_2017_2018 = <?php echo $data_2017_2018; ?> ;
 		var data_2018_2019 = <?php echo $data_2018_2019; ?> ;
 		var data_2019_2020 = <?php echo $data_2019_2020; ?> ;
+		var data_2020_2021 = <?php echo $data_2020_2021; ?> ;
 		
 		var data = {
 		    labels: [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", ],
@@ -112,6 +115,14 @@
 				borderColor: "magenta",
 				borderWidth: 1,
 					data: data_2019_2020	
+		    	},{
+				label: "2020-2021",
+				lineTension: 0,
+				fill: false,
+				backgroundColor: "black",
+				borderColor: "black",
+				borderWidth: 1,
+					data: data_2020_2021	
 		    	}
 
 

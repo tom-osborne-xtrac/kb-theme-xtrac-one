@@ -20,6 +20,12 @@ get_header(); ?>
 				<h1>Material Handbooks</h1>
 			</header><!-- .page-header -->
 			
+			<!-- EDIT BUTTON -->					
+			<?php get_template_part( 'template-parts/content', 'editbutton' ); ?>
+			
+			<a href="http://172.20.20.135/wp-content/uploads/Materials-price-guide_Oct20.pdf" class="button-green" style="float:right; margin: 0;">Material Pricing</a>
+			
+						
 			<div class="filter-input"><input type="text" id="tableFilterInput" onkeyup="tableFilter('tableFilterInput', 'materials_table', 2)" placeholder="Filter by material name..."></div>
 
 			<!-- MATERIAL HANDBOOK TABLE -->

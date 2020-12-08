@@ -33,6 +33,10 @@
 <script src="/wp-content/themes/xtrac-one/js/jPushMenu.js"></script>
 <script src="/wp-content/themes/xtrac-one/js\papaparse.min.js"></script>
 <script src="/wp-content/themes/xtrac-one/js\dataFetch.js"></script>
+
+<!-- development version, includes helpful console warnings -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
 </head>
 
 <body <?php body_class(); ?>>
@@ -102,7 +106,7 @@
 		$excludeSidebarRight = array();
 		
 		if ( is_active_sidebar ( 'right' ) ) {
-			if ( !is_page_template( array( 'page-dashb.php', 'page-dashb-rd.php', 'page-dashb-ca.php', 'page-projects.php' ) )  &&  !is_home() && !is_search() && !is_post_type_archive('material_handbook') && !is_post_type_archive('ht_code') ) {
+			if ( !is_page_template( array( 'page-dashb.php', 'page-dashb-rd.php', 'page-dashb-ca.php', 'page-projects.php' ) ) && !is_search() && !is_post_type_archive('material_handbook') && !is_post_type_archive('ht_code') ) {
 					get_sidebar('right');
 			}
 		}
