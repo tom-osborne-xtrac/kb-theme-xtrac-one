@@ -1427,9 +1427,9 @@ ul.breadcrumbs {
 	font-weight: bold;
 }
 
-.post-info-widget {
+/*.post-info-widget {
 	
-}
+}*/
 
 .widget-subtitle {
 	margin-left: 12px;
@@ -1448,8 +1448,7 @@ ul.breadcrumbs {
 	z-index: 20;	
 }
 .site-branding {
-	display: inline-block;
-	float: left;	
+	display: inline-block;	
 	height: 64px;
 	line-height: 64px;
 	margin: 0;
@@ -1554,9 +1553,9 @@ ul.breadcrumbs {
 	height: 100%;
 	padding: 0;
 }
-#col-left {
-/*	border-right: solid 1px rgba(209, 221, 224, 1); */
-}
+/*#col-left {
+/*	border-right: solid 1px rgba(209, 221, 224, 1); 
+}*/
 
 .featured-row h3 {
 	margin:6px 0;
@@ -1677,8 +1676,8 @@ ul.breadcrumbs {
 .widget-area-right-closed {
 	left: -410px;
 }
-.widget-area-right .widget-title {
-}
+/*.widget-area-right .widget-title {
+}*/
 /* UL Level 1 */
 .widget-area-right ul, .widget-area-left ul {
 	list-style-type: none;
@@ -1695,14 +1694,14 @@ ul.breadcrumbs {
 			margin-left: 12px;
 		}
 
-.widget-area-right ul li:before, .widget-area-left ul li:before {
-	/*content: "\0BB \020";*/
-}
+/*.widget-area-right ul li:before, .widget-area-left ul li:before {
+	/*content: "\0BB \020";
+}*/
 .widget-area-right ul li, .widget-area-left ul li {
 	list-style-type: none;
 }
-.widget-area-right ul li:hover {
-}
+/*.widget-area-right ul li:hover {
+}*/
 .widget-area-right ul li a, .widget-area-left ul li a {
 	text-decoration: none;
 	display: block;
@@ -1722,9 +1721,9 @@ ul.breadcrumbs {
 			.widget-area-right ul ul li {
 				padding-left: 0;
 			}
-			.widget-area-right ul ul li a {
-				/*padding-left: 36px;*/
-			}
+			/*.widget-area-right ul ul li a {
+				/*padding-left: 36px;
+			}*/
 
 
 .widget-area-right::-webkit-scrollbar-track,.widget-area-left::-webkit-scrollbar-track
@@ -1859,8 +1858,8 @@ ul.breadcrumbs {
 }
 /*:before { content:"\00bb"; margin-right: 12px; }*/
 
-.attachment {
-}
+/*.attachment {
+}*/
 .media-icon-mh { /* Material Handbook */
 	height: 48px;
 	float: left;
@@ -1879,8 +1878,8 @@ ul.breadcrumbs {
 	margin-right: 12px;
 	margin-top: 9px;
 }
-.material_handbook .entry-title,.material_handbook .post-info {
-}
+/*.material_handbook .entry-title,.material_handbook .post-info {
+}*/
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
@@ -2190,9 +2189,9 @@ object {
 .sub-pages li {
 	position: relative;
 }
-.sub-pages li:before { 
+/*.sub-pages li:before { 
 
-}
+}*/
 .sub-pages a {
 	display: inline-block;
 	color: #fff;
@@ -2399,24 +2398,24 @@ object {
 .dashb-chart-line {
 	margin-bottom: 24px;
 }
-.dashb-chart {
-	/*max-width: 1450px;*/
-}
+/*.dashb-chart {
+	/*max-width: 1450px;
+}*/
 .dashb-chart-pie {
 	width: 500px;
 	height: 575px;
 	float: left;
 }
-.dashb-chart-pie canvas {
-}
+/*.dashb-chart-pie canvas {
+}*/
 
 .dashb-chart-barHor {
 	width: auto;
 	margin-left: 524px;
 	height: 575px;
 }
-.dashb-chart-barHor canvas {
-}
+/*.dashb-chart-barHor canvas {
+}*/
 
 .dashb-chart-line {
 	width: 100%;
@@ -2669,8 +2668,8 @@ object {
 	    margin-top: -64px!important; /* Give negative margin of your fixed element 
 	    visibility: collapse; 
 	}*/
-	.menu-toggle {
-	}
+	/*.menu-toggle {
+	}*/
 	.main-navigation ul {
 		display: block;
 		clear: both;
