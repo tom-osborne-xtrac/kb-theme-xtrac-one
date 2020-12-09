@@ -33,6 +33,7 @@
 <script src="/wp-content/themes/xtrac-one/js/jPushMenu.js"></script>
 <script src="/wp-content/themes/xtrac-one/js\papaparse.min.js"></script>
 <script src="/wp-content/themes/xtrac-one/js\dataFetch.js"></script>
+<script src="https://kit.fontawesome.com/ab1d9e87ee.js" crossorigin="anonymous"></script>
 
 <!-- development version, includes helpful console warnings -->
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>

@@ -29,9 +29,9 @@ get_header(); ?>
 			<!-- MATERIAL HANDBOOK TABLE -->
 			<table id="glossary_table">	
 	      		<tr>
-		      		<th style="min-width: 100px; width: 10%";>Acronym</th>
-		      		<th style="min-width: 300px; width: 40%">Term</th>
-		      		<th>Description</th>
+		      		<th style="min-width: 100px; width: 10%;">Acronym</th>
+		      		<th style="min-width: 300px; width: 40%;">Term</th>
+                    <th>Description</th>
 		      	</tr>
 		
 			<?php 
@@ -44,18 +44,23 @@ get_header(); ?>
                     $term = get_sub_field('glossary_term');
                     $desc = get_sub_field('glossary_description');
                     $url = get_sub_field('glossary_url');
+                    $approved = get_sub_field('glossary_approved');
+
+                                   
+                if($approved == true){
 
             ?>
 	      		<tr>
 		      		<td><strong><?php echo $acronym ?></strong></td>
 		      		<td>
                         <?php if($url) { ?>
-                            <a href="<?php echo $url; ?>"> <?php echo $term; ?> </a>
+                            <a href="<?php echo $url; ?>" target="_blank" rel="noopener noreferrer"><?php echo $term; ?><span style="font-size: 10px; position: relative; top:-2px; margin-left: 4px;"><i class="fas fa-external-link-alt"></i></span></a>
                         <?php }else{ echo $term; } ?>
                     </td>
-		      		<td><?php echo $desc ?></td>
+                    <td><?php echo $desc ?></td>
 		      	</tr>
             <?php
+                } // end approval check
                 endwhile;
             else:
                 echo "Nothing found!";
