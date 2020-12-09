@@ -15,15 +15,6 @@
 get_header();
 ?>
 
-
-
-<script>
-fetchData();
-
-
-</script>
-
-
 	<div id="primary" class="content-area-nosidebar">
 		<main id="main" class="site-main" role="main">
 		

@@ -23,20 +23,33 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
 <!--CALL JAVASCRIPT LIBRARIES -->
-<script src="/wp-content/themes/xtrac-one/js\jquery-3.4.1.min.js"></script>
+<!-- JQuery -->
+<link rel="stylesheet" href="/wp-content/themes/xtrac-one/js/jquery-ui.min.css">
+<script src="/wp-content/themes/xtrac-one/js/external/jquery/jquery.js"></script>
+<script src="/wp-content/themes/xtrac-one/js/jquery-ui.min.js"></script>
+
+<!-- Chart.js -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0"></script>
 <script>Chart.plugins.unregister(ChartDataLabels);</script>
-<script src="/wp-content/themes/xtrac-one/js\tablesorter-master/js/jquery.tablesorter.js"></script>
-<script src="/wp-content/themes/xtrac-one/js\tablesorter-master/js/jquery.tablesorter.widgets.js"></script>
-<script src="/wp-content/themes/xtrac-one/js/custom.js"></script>
-<script src="/wp-content/themes/xtrac-one/js/jPushMenu.js"></script>
-<script src="/wp-content/themes/xtrac-one/js\papaparse.min.js"></script>
-<script src="/wp-content/themes/xtrac-one/js\dataFetch.js"></script>
-<script src="https://kit.fontawesome.com/ab1d9e87ee.js" crossorigin="anonymous"></script>
 
 <!-- VUE -->
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+
+<!-- PapaParse -->
+<script src="/wp-content/themes/xtrac-one/js/papaparse.min.js"></script>
+
+<!-- FontAwesome -->
+<script src="https://kit.fontawesome.com/ab1d9e87ee.js" crossorigin="anonymous"></script>
+
+<!-- Tablesorter -->
+<script src="/wp-content/themes/xtrac-one/js/tablesorter-master/js/jquery.tablesorter.js"></script>
+<script src="/wp-content/themes/xtrac-one/js/tablesorter-master/js/jquery.tablesorter.widgets.js"></script>
+
+<!-- Custom JS -->
+<script src="/wp-content/themes/xtrac-one/js/custom.js"></script>
+<script src="/wp-content/themes/xtrac-one/js/jPushMenu.js"></script>
+<script src="/wp-content/themes/xtrac-one/js/dataFetch.js"></script>
 
 </head>
 
