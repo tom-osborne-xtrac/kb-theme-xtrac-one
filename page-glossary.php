@@ -29,9 +29,9 @@ get_header(); ?>
 			<!-- MATERIAL HANDBOOK TABLE -->
 			<table id="glossary_table">	
 	      		<tr>
-		      		<th width="100px;">Acronym</th>
-		      		<th>Term</th>
-		      		<!--<th>Description</th>-->
+		      		<th style="min-width: 100px; width: 10%";>Acronym</th>
+		      		<th style="min-width: 300px; width: 40%">Term</th>
+		      		<th>Description</th>
 		      	</tr>
 		
 			<?php 
@@ -43,12 +43,17 @@ get_header(); ?>
                     $acronym = get_sub_field('glossary_acronym');
                     $term = get_sub_field('glossary_term');
                     $desc = get_sub_field('glossary_description');
+                    $url = get_sub_field('glossary_url');
 
             ?>
 	      		<tr>
 		      		<td><strong><?php echo $acronym ?></strong></td>
-		      		<td><?php echo $term ?></td>
-		      		<!--<td><?php echo $desc ?></td>-->
+		      		<td>
+                        <?php if($url) { ?>
+                            <a href="<?php echo $url; ?>"> <?php echo $term; ?> </a>
+                        <?php }else{ echo $term; } ?>
+                    </td>
+		      		<td><?php echo $desc ?></td>
 		      	</tr>
             <?php
                 endwhile;

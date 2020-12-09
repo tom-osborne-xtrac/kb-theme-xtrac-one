@@ -2618,21 +2618,24 @@ object {
 		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 	}
 	.widget-area-right {
-		left: 20px;
+		left: -300px;
 	}
 	.widget-area-right-closed {
-		left: 220px;
+		left: 280px;
 	}
 	.hamburger {
 		display:inline-block;
 	}
 	#xmas-hat {
 		left: 298px;
-}
+	}
 	.dashb-container { 
 		padding-left: 0;
 	}
-
+	#return-to-top {
+		right: 25px;
+		left: auto;
+	}
 }
 
 @media (max-width: 1175px) {
@@ -2654,10 +2657,6 @@ object {
 	margin: 0;
 	}
 
-	#return-to-top {
-		right: 25px;
-		left: auto;
-	}
 	span.anchoroffset:target:before {
 	  display: block;
 	  position: relative;
@@ -2705,6 +2704,9 @@ object {
 	}
 	#tableFiltered {
 		width: 100%;
+	}
+	#tableFilterInput {
+		clear:both;
 	}
 
 }
