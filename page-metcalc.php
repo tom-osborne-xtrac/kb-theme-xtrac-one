@@ -1,5 +1,6 @@
 <?php
 /**
+ * Template Name: Page METCALC
  * The template for displaying all pages.
  *
  * This is the template that displays all pages by default.
