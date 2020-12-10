@@ -35,32 +35,42 @@ get_header(); ?>
 		      	</tr>
 		
 			<?php 
-            /* Setup the query to display all glossary terms */
-            if( have_rows('glossary_term') ):
+			/* Setup the query to display all glossary terms */
+			$repeater = get_field('glossary_term_repeater');
+			$order = array();
+			foreach( $repeater as $i => $row ) {
+				$order[ $i ] = $row['glossary_acronym'];
+			}
+			array_multisort( $order, SORT_ASC, $repeater );
+			
+            if( have_rows('glossary_term_repeater') ):
                                
-                while( have_rows('glossary_term') ) : the_row();
+                while( have_rows('glossary_term_repeater') ) : the_row();
 
-                    $acronym = get_sub_field('glossary_acronym');
-                    $term = get_sub_field('glossary_term');
-                    $desc = get_sub_field('glossary_description');
-                    $url = get_sub_field('glossary_url');
-                    $approved = get_sub_field('glossary_approved');
+                    $acronym 	= get_sub_field('glossary_acronym');
+                    $term 		= get_sub_field('glossary_term');
+                    $desc 		= get_sub_field('glossary_description');
+                    $url 		= get_sub_field('glossary_url');
+                    $approved 	= get_sub_field('glossary_approved');
 
                                    
-                if($approved == true){
-
+                if($approved == true):
             ?>
 	      		<tr>
-		      		<td><strong><?php echo $acronym ?></strong></td>
-		      		<td>
-                        <?php if($url) { ?>
-                            <a href="<?php echo $url; ?>" target="_blank" rel="noopener noreferrer"><?php echo $term; ?><span style="font-size: 10px; position: relative; top:-2px; margin-left: 4px;"><i class="fas fa-external-link-alt"></i></span></a>
-                        <?php }else{ echo $term; } ?>
-                    </td>
+		      		<td><strong>
+					  <?php if($url) { ?>
+                            <a href="<?php echo $url; ?>" target="_blank" rel="noopener noreferrer"><?php echo $acronym ?>
+							<span style="font-size: 10px; position: relative; top:-2px; margin-left: 4px;">
+									<i class="fas fa-external-link-alt"></i>
+								</span>
+							</a>
+						<?php }else{ echo $acronym; } ?>
+					</strong></td>
+					<td><?php echo $term; ?></td>
                     <td><?php echo $desc ?></td>
 		      	</tr>
             <?php
-                } // end approval check
+                endif; // end approval check
                 endwhile;
             else:
                 echo "Nothing found!";

@@ -1162,4 +1162,41 @@ function search_result_types( $hits ) {
     return $hits;
 }
 
+
+// /***********************************************
+//  * ACF Repeater Sort
+//  ***********************************************/
+// function my_acf_load_value( $value, $post_id, $field ) {
+	
+// 	// vars
+// 	$order = array();
+	
+	
+// 	// bail early if no value
+// 	if( empty($value) ) {
+		
+// 		return $value;
+		
+// 	}
+	
+	
+// 	// populate order
+// 	foreach( $value as $i => $row ) {
+		
+// 		$order[ $i ] = $row['field_5fcf810d5b7fc'];
+		
+// 	}
+	
+	
+// 	// multisort
+// 	array_multisort( $order, SORT_DESC, $value );
+	
+	
+// 	// return	
+// 	return $value;
+	
+// }
+
+// add_filter('acf/load_value/name=scores', 'my_acf_load_value', 10, 3);
+
 ?>
