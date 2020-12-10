@@ -60,7 +60,7 @@ get_header(); ?>
 		      		<td><strong>
 					  <?php if($url) { ?>
                             <a href="<?php echo $url; ?>" target="_blank" rel="noopener noreferrer"><?php echo $acronym ?>
-							<span style="font-size: 10px; position: relative; top:-2px; margin-left: 4px;">
+								<span style="font-size: 10px; position: relative; top:-2px; margin-left: 4px;">
 									<i class="fas fa-external-link-alt"></i>
 								</span>
 							</a>
