@@ -1080,7 +1080,6 @@ function post_type_extra_weight( $match ) {
 	return $match;
 }
 
-
 add_filter('relevanssi_hits_filter', 'rlv_gather_categories', 99);
 function rlv_gather_categories($hits) {
     global $rlv_categories_present;
@@ -1163,40 +1162,29 @@ function search_result_types( $hits ) {
 }
 
 
-// /***********************************************
-//  * ACF Repeater Sort
-//  ***********************************************/
-// function my_acf_load_value( $value, $post_id, $field ) {
+/***********************************************
+ * ACF Repeater Sort
+ ***********************************************/
+function my_acf_load_value( $value, $post_id, $field ) {
 	
-// 	// vars
-// 	$order = array();
-	
-	
-// 	// bail early if no value
-// 	if( empty($value) ) {
+	// vars
+	$order = array();
 		
-// 		return $value;
+	// bail early if no value
+	if( empty($value) ) {
+		return $value;
+	}
+	
+	// populate order
+	foreach( $value as $i => $row ) {
+		$order[ $i ] = $row['field_5fcf810d5b7fc'];
+	}
+	
+	// multisort
+	array_multisort( $order, SORT_ASC, $value );
 		
-// 	}
-	
-	
-// 	// populate order
-// 	foreach( $value as $i => $row ) {
-		
-// 		$order[ $i ] = $row['field_5fcf810d5b7fc'];
-		
-// 	}
-	
-	
-// 	// multisort
-// 	array_multisort( $order, SORT_DESC, $value );
-	
-	
-// 	// return	
-// 	return $value;
-	
-// }
-
-// add_filter('acf/load_value/name=scores', 'my_acf_load_value', 10, 3);
-
+	// return	
+	return $value;
+}
+add_filter('acf/load_value/name=glossary_term_repeater', 'my_acf_load_value', 10, 3);
 ?>

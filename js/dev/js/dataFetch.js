@@ -11,7 +11,7 @@ function fetchData(tableID) {
 			// Table Header
 			const thead = document.createElement("thead");
 			const tr_head = document.createElement("tr");
-			const colTitles = new Array;
+			let colTitles = new Array;
 			dataTable.appendChild(thead); 	// add thead tag
 			thead.appendChild(tr_head);		// add tr header tag
 			for (i=0; i<numCols; i++) {
@@ -21,14 +21,14 @@ function fetchData(tableID) {
 			}
 
 			// Populate Data; split JSON data into rows, then in to cells
-			for (j=1; j<numRows; j++) {
+			for (i=1; i<numRows; i++) {
 				const tr = document.createElement("tr");
 				dataTable.appendChild(tr);
-				for (k=0; k<numCols; k++) {
-					const cellData = csvData.data[j][k];
+				for (j=0; j<numCols; j++) {
+					const cellData = csvData.data[i][j];
 					const cellAttrVal = "col-" ;                    
 					const td = document.createElement("td");
-					td.setAttribute("data-tag", colTitles[k]);
+					td.setAttribute("data-tag", colTitles[j]);
 					tr.appendChild(td).textContent = cellData;
 				}				
 			}
