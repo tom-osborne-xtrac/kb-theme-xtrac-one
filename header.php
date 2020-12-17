@@ -49,7 +49,7 @@
 <!-- Custom JS -->
 <script src="/wp-content/themes/xtrac-one/js/custom.js"></script>
 <script src="/wp-content/themes/xtrac-one/js/jPushMenu.js"></script>
-<script src="/wp-content/themes/xtrac-one/js/dataFetch.js"></script>
+<!-- <script src="/wp-content/themes/xtrac-one/js/dataFetch.js"></script> -->
 
 </head>
 
