@@ -248,7 +248,15 @@ a.button-grey {
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
     padding:6px 12px;
     display: inline-block;
-    margin-top: 12px;
+	margin: 12px 12px 0 0;
+}
+
+a.button-green:last-child,
+a.button-maroon:last-child,
+a.button-orange:last-child,
+a.button-blue:last-child,
+a.button-grey:last-child {
+	margin-right: 0;
 }
 
 a.button-green {
@@ -892,9 +900,12 @@ a:active {
 /* .main-navigation {
 } */
 
+.main-navigation {
+	display: block;
+}
 .main-navigation ul {
 	position: relative;
-	float:left;
+	float: left;
 	top: 0;
 	padding: 0;
 	display: block;
@@ -1448,7 +1459,8 @@ ul.breadcrumbs {
 	z-index: 20;	
 }
 .site-branding {
-	display: inline-block;	
+	display: block;	
+	float: left;
 	height: 64px;
 	line-height: 64px;
 	margin: 0;
@@ -1464,7 +1476,6 @@ ul.breadcrumbs {
 	margin: 12px;
 	float: left;
 }
-
 
 /*--------------------------------------------------------------
 # Content
@@ -2439,7 +2450,37 @@ object {
 	margin-bottom: 128px
 }
 
+#container-hc {
+    clear: both;
+    height: 54px;
+	padding: 8px;
+	margin: 12px;
+	width: 65%;
+	min-width: 500px;
+	border: 1px solid #cccccc;
+	border-radius: 6px;
+	background-color: #fafafa;
+}
 
+
+.col-hc{
+    display: block;
+    float: left;
+    margin: 0;
+    line-height: 34px;
+    padding: 0 0 0 8px;
+}
+
+.col-hc-1, .col-hc-2, .col-hc-4 { width: 120px; }
+.col-hc-3 { padding-left: 25px; width: 80px;}
+
+
+.input-hc { 
+    width: 108px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0 0 0 8px;
+}
 /*----------------------------------*/
 /* PRINT-----------------------*/
 /*----------------------------------*/

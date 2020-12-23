@@ -24,6 +24,7 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'editbutton' ); ?>
 			
 			<a href="http://172.20.20.135/wp-content/uploads/Materials-price-guide_Oct20.pdf" class="button-green" style="float:right; margin: 0;">Material Pricing</a>
+			<a href="http://172.20.20.135/engineering/advanced-engineering-group/metallurgy/hardness-conversion/" class="button-green" style="float:right; margin-top: 0;">Hardness Conversion Tool</a>
 			
 						
 			<div class="filter-input"><input type="text" id="tableFilterInput" onkeyup="tableFilter('tableFilterInput', 'materials_table', 2)" placeholder="Filter by material name..."></div>

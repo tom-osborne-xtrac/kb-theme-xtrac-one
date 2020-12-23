@@ -25,6 +25,9 @@ get_header(); ?>
 			<?php if( current_user_can( 'publish_posts' ) ) { ?>
 				<a href="<?php print admin_url('post-new.php?post_type=ht_code'); ?>" class="button-green" style="float:right; margin: 0;">Add New</a>
 			<?php } ?>
+			
+			<a href="http://172.20.20.135/engineering/advanced-engineering-group/metallurgy/hardness-conversion/" class="button-green" style="float:right; margin-top: 0;">Hardness Conversion Tool</a>
+
 			<div class="filter-input"><input type="text" id="filter_ht_htcode" class="search"  data-column="all" placeholder="Filter table..."></div>
 			
 			<!-- HT CODE TABLE -->
