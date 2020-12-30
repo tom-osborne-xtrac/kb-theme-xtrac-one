@@ -49,7 +49,7 @@
 <!-- Custom JS -->
 <script src="/wp-content/themes/xtrac-one/js/custom.js"></script>
 <script src="/wp-content/themes/xtrac-one/js/jPushMenu.js"></script>
-<!-- <script src="/wp-content/themes/xtrac-one/js/dataFetch.js"></script> -->
+<script src="/wp-content/themes/xtrac-one/js/fetchData.js"></script>
 
 </head>
 
@@ -78,9 +78,12 @@
 			<div class="site-branding">
 			
 			<!-- CHRISTMAS HAT -->
+			<?php $month = date("m"); 
+					if($month == 12): ?>
 			<a href="https://www.timeanddate.com/countdown/christmas" target="_blank">
 				<img src="/wp-content/themes/xtrac-one/images/Christmas-Hat-PNG.png" id="xmas-hat" height="32px" width="32px">
 			</a>
+			<?php endif; ?>
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 					<img src="http://172.20.20.135/wp-content/themes/xtrac-one/images/XTRAC logo white.svg" alt="Xtrac Logo" class="xtrac-logo">
 				</a>
