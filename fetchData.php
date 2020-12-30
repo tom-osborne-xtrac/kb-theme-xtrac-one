@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <script src="/wp-content/themes/xtrac-one/js\papaparse.min.js"></script>
-        <script src="/wp-content/themes/xtrac-one/js\dataFetch.js"></script>
+        <script src="/wp-content/themes/xtrac-one/js/dev/js/fetchData.js"></script>
         <style>
         @font-face {
             font-family: Roboto;  
@@ -49,7 +49,6 @@
         </style>
     </head>
     <body>
-    <script>fetchData("dataTable");</script>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -58,5 +57,6 @@
         <div id="tableContainer">
         <table id="dataTable"></table>
         </div>
+        <script>fetchData("dataTable");</script>
     </body>
 </html>
