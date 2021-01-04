@@ -20,7 +20,6 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link rel="stylesheet" type="text/css" href="/wp-content/themes/xtrac-one/css/jPushMenu.css" />
 <link rel="icon" type="image/x-icon" href="http://172.20.20.135/wp-content/uploads/favicon.ico" />
-<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
 <!--CALL JAVASCRIPT LIBRARIES -->
 <!-- JQuery -->
@@ -49,7 +48,7 @@
 <!-- Custom JS -->
 <script src="/wp-content/themes/xtrac-one/js/custom.js"></script>
 <script src="/wp-content/themes/xtrac-one/js/jPushMenu.js"></script>
-<script src="/wp-content/themes/xtrac-one/js/fetchData.js"></script>
+<!-- <script src="/wp-content/themes/xtrac-one/js/fetchData.js"></script> -->
 
 </head>
 

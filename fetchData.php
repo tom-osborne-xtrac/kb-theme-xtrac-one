@@ -55,8 +55,8 @@
         
         <!-- Table of data -->
         <div id="tableContainer">
-        <table id="dataTable"></table>
+            <table id="dataTable"></table>
         </div>
-        <script>fetchData("dataTable");</script>
+    <script>fetchData("dataTable");</script>
     </body>
 </html>
