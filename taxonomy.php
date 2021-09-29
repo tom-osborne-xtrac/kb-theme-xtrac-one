@@ -47,8 +47,9 @@ get_header(); ?>
 					echo $tech_term_name . ' (' . $tech_term_count . ')';
 					echo "</a>";
 					echo "</div>";
-				}			
-			} ?>
+				
+				} // end foreach			
+			} // end if ?>
 			
 			</div>
 			<?php

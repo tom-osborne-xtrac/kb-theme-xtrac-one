@@ -29,7 +29,7 @@
 		<?php get_template_part( 'template-parts/content', 'postmeta' ); ?>
 		
 
-	</header><!-- .entry-header -->
+	</header><!-- .entry-header-page -->
 
 	<div class="entry-content">
 		<?php	the_content(); ?>

@@ -5,7 +5,6 @@
 	 <?php if ( is_archive() || is_front_page() || is_home() || is_search() || is_page() ) : ?>
 	 
 	 	<!-- MATERIAL HANDBOOKS ISSUE NUMBER IN LOOP -->
-	 	
 	 	<?php $gtpt = get_post_type_object( get_post_type($post) );
 	 	 	
 			//confidential	 or customer friendly

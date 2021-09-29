@@ -8,6 +8,13 @@
  */
 
 $projectCodes = get_the_terms( $post->ID , 'project_code' );
+$projectCodes_count = count($projectCodes);
+
+if ( $projectCodes_count > 1  ){
+	$sep = ", ";
+}else{
+	$sep = " ";
+}
 
 ?>
 <tr>
@@ -17,7 +24,11 @@ $projectCodes = get_the_terms( $post->ID , 'project_code' );
 	<?php 
 		if ( $projectCodes != null ) {
 			foreach( $projectCodes as $projectCode ) {
-				echo $projectCode->name . ' ';
+				if ( $projectCode == $projectCodes[count($projectCodes)-1] ) {
+					echo $projectCode->name . '';
+				}else{
+					echo $projectCode->name . $sep;
+				}
 			}
 		}else{
 			echo 'N/A';
