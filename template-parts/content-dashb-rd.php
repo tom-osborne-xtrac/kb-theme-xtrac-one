@@ -69,73 +69,47 @@
 		    labels: [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", ],
 			datasets: [{
 				label: "2014-2015",
-				lineTension: 0,
-				fill: false,
 				backgroundColor: "red",
 				borderColor: "red",
-				borderWidth: 1,
 					data: data_2014_2015
 				},{
 				label: "2015-2016",
-				lineTension: 0,
-				fill: false,
 				backgroundColor: "gray",
 				borderColor: "gray",
-				borderWidth: 1,
 					data: data_2015_2016	
 
 		    	},{
 				label: "2016-2017",
-				lineTension: 0,
-				fill: false,
 				backgroundColor: "blue",
 				borderColor: "blue",
-				borderWidth: 1,
 					data: data_2016_2017	
 
 		    	},{
 				label: "2017-2018",
-				lineTension: 0,
-				fill: false,
 				backgroundColor: "green",
 				borderColor: "green",
-				borderWidth: 1,
 					data: data_2017_2018	
 		    	},{
 				label: "2018-2019",
-				lineTension: 0,
-				fill: false,
 				backgroundColor: "orange",
 				borderColor: "orange",
-				borderWidth: 1,
 					data: data_2018_2019	
 		    	},{
 				label: "2019-2020",
-				lineTension: 0,
-				fill: false,
 				backgroundColor: "magenta",
 				borderColor: "magenta",
-				borderWidth: 1,
 					data: data_2019_2020	
 		    	},{
 				label: "2020-2021",
-				lineTension: 0,
-				fill: false,
 				backgroundColor: "black",
 				borderColor: "black",
-				borderWidth: 1,
 					data: data_2020_2021	
 		    	},{
 				label: "2021-2022",
-				lineTension: 0,
-				fill: false,
 				backgroundColor: "white",
 				borderColor: "black",
-				borderWidth: 1,
 					data: data_2021_2022	
 		    	}
-
-
 		    ]
 		};
 		var options = {
@@ -177,7 +151,18 @@
 			},
 			tooltips: {
       			mode: 'index'
-   			}	
+   			},
+			elements: {
+				line: {
+					tension: 0,
+					fill: false,
+					borderWidth: 1
+				},
+				point: {
+					radius: 2,
+					borderWidth: 1
+				}
+			}		
 		}	
 		
 		var scatterChart = new Chart(ctx, {
