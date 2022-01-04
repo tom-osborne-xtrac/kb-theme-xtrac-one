@@ -136,7 +136,6 @@ get_header(); ?>
                     $desc 		= get_sub_field('glossary_description');
                     $url 		= get_sub_field('glossary_url');
                     $approved 	= get_sub_field('glossary_approved');
-
                                    
                 if($approved == true):
             ?>

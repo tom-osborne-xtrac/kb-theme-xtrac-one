@@ -242,6 +242,20 @@ a.button-green,
 a.button-maroon,
 a.button-orange,
 a.button-blue,
+a.button-grey,
+a.button-darkgrey {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    padding:6px 12px;
+    display: inline-block;
+	margin: 12px 12px 0 0;
+}
+
+a.button-green fas,
+a.button-maroon,
+a.button-orange,
+a.button-blue,
 a.button-grey {
     color: white;
     border-radius: 4px;
@@ -249,6 +263,11 @@ a.button-grey {
     padding:6px 12px;
     display: inline-block;
 	margin: 12px 12px 0 0;
+}
+
+a.button-small {
+    padding: 0 5px;
+	margin: 0;
 }
 
 a.button-green:last-child,
@@ -333,7 +352,14 @@ a.button-grey:hover  {
     background: rgb(230, 230, 230); /* this is a light blue */
     text-decoration:none;
 }
-
+a.button-darkgrey {
+    background: rgb(233, 233, 233);
+    border: 1px solid rgb(175, 175, 175);
+}
+a.button-darkgrey:hover  {
+    background: rgb(230, 230, 230); /* this is a light blue */
+    text-decoration:none;
+}
 
 input {
 	line-height: 48px;
